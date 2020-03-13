@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excel2JSON</title>
+  <style>
+    .app {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    textarea {
+      display: block;
+      margin: 20px 0;
+      width: 100%;
+      height: 50vh;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+    }
+
+    .group {
+      display: flex;
+      margin-right: 30px;
+    }
+
+    label {
+      padding: 10px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      color: #555;
+      text-align: center;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="text"],
+    select {
+      padding: 0.2em 0.5em;
+    }
+
+    button {
+      color: #fff;
+      background-color: #0095ff;
+      box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.4);
+      position: relative;
+      display: inline-block;
+      padding:  .8em 2em;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      outline: none;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: normal;
+      line-height: 1.15384615;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+    <div class="toolbar">
+      <div class="group">
+        <label for="">分割符</label>
+        <input type="text" id="division" placeholder="默认是制表符号 \t ">
+      </div>
+      <div class="group">
+        <label for="">转换方式</label>
+        <select name="" id="type">
+        <option value="object">按行生成对象</option>
+        <option value="array">按行生成数组</option>
+      </select>
+      </div>
+      <button id="btnParse">转换</button>
+    </div>
+    <h2>温馨提示：</h2>
+    <ol class="tips">
+      <li> 把需要转换的数据，从 excel 里复制出来粘贴到输入框即可</li>
+      <li>如果转换方式选择的是“按行生成对象”，需要保证首行是标题行，其他行是数据行。</li>
+      <li>
+        所有单元格的内容中不允许包含有换行，即在编辑单元格时不允许使用 alt+enter 进行换行
+      </li>
+    </ol>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
