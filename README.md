@@ -1,4 +1,4 @@
 # tool-kit
 提高效率的工具箱
 
-- [excel2json](https://zhanyuzhang.github.io/tool-kit/excel2json/) 一款高效、简便的将 excel 内容转换成 JSON 的强大工具。在线地址请点击
+- [excel2json](https://zhanyuzhang.github.io/tool-kit/excel2json/) 一款高效、开箱即用的，能够把 excel 内容转换成 JSON 的强大工具。
