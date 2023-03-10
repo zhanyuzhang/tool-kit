@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         New Userscript
+// @name         防偷窥神器
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
 // @author       You
 // @match        *https://juejin.cn/notification/im?participantId*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=yixin.im
+// @icon         https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/e08da34488b114bd4c665ba2fa520a31.svg
 // @grant        none
 // ==/UserScript==
 
